@@ -12,6 +12,11 @@ body{
     margin:0;
     font-family: Arial, sans-serif;
     background-color:#e6f2ff;
+    scroll-behavior: smooth; /* menú funcional con desplazamiento suave */
+}
+
+h1{
+    margin:0;
 }
 
 h2{
@@ -20,6 +25,7 @@ h2{
 
 p{
     color:#333;
+    line-height:1.6;
 }
 
 /* ===== MENÚ ===== */
@@ -27,6 +33,8 @@ nav{
     background:#163d6b;
     padding:15px;
     text-align:center;
+    position:sticky;
+    top:0;
 }
 
 nav a{
@@ -34,10 +42,11 @@ nav a{
     text-decoration:none;
     margin:0 20px;
     font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
-    text-decoration:underline;
+    color:#ffd700;
 }
 
 /* ===== HEADER ===== */
@@ -52,8 +61,8 @@ header{
 .seccion{
     background:white;
     width:85%;
-    margin:30px auto;
-    padding:30px;
+    margin:40px auto;
+    padding:35px;
     border-radius:12px;
     box-shadow:0px 5px 15px rgba(0,0,0,0.2);
 }
@@ -77,9 +86,9 @@ header{
 /* ===== IMÁGENES ===== */
 img{
     width:100%;
-    max-width:500px;
+    max-width:600px;
     display:block;
-    margin:20px auto;
+    margin:25px auto;
     border-radius:10px;
 }
 
@@ -108,35 +117,83 @@ footer{
     <a href="#importancia">Importancia</a>
 </nav>
 
+<!-- SECCIÓN 1 -->
 <section id="quees" class="seccion">
     <h2>¿Qué es la Ingeniería Automotriz?</h2>
+
     <p class="grande">
-        La ingeniería automotriz se encarga del diseño, desarrollo y fabricación de vehículos modernos.
+        La ingeniería automotriz es una rama de la ingeniería que se enfoca en el diseño,
+        desarrollo, fabricación y mejora de vehículos de transporte, tanto tradicionales
+        como eléctricos o híbridos.
+    </p>
+
+    <p>
+        Esta disciplina combina conocimientos de mecánica, electrónica, informática,
+        materiales y energías alternativas para crear automóviles más eficientes,
+        seguros y sostenibles. Los profesionales de esta área no solo trabajan en la
+        construcción del vehículo, sino también en la optimización del consumo de
+        combustible y la reducción del impacto ambiental.
     </p>
 
     <p class="destacado">
-        Esta carrera combina mecánica, tecnología y sistemas electrónicos avanzados.
+        Es una carrera que integra tecnología avanzada y constante innovación.
     </p>
 
     <p id="fuenteEspecial">
-        Los ingenieros automotrices trabajan en la innovación de motores más eficientes y sostenibles.
+        Actualmente, la ingeniería automotriz tiene un papel fundamental en el
+        desarrollo de vehículos eléctricos y sistemas inteligentes de conducción.
     </p>
 
     <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Auto moderno">
 </section>
 
+<!-- SECCIÓN 2 -->
 <section id="areas" class="seccion">
     <h2>Áreas de trabajo</h2>
-    <p>Motores, electrónica automotriz, diseño de chasis y energías alternativas.</p>
-    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor">
+
+    <p>
+        Los ingenieros automotrices pueden desempeñarse en múltiples áreas dentro
+        de la industria automotriz. Una de las más importantes es el diseño de motores,
+        donde se busca mejorar el rendimiento y reducir emisiones contaminantes.
+    </p>
+
+    <p>
+        También trabajan en electrónica automotriz, desarrollando sistemas de
+        seguridad como frenos ABS, sensores, cámaras y sistemas de asistencia al
+        conductor. Otra área relevante es el diseño de chasis y estructura,
+        garantizando resistencia y seguridad ante impactos.
+    </p>
+
+    <p>
+        Además, el crecimiento de los vehículos eléctricos ha abierto oportunidades
+        en energías alternativas, baterías de alta eficiencia y software de control.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor automotriz">
 </section>
 
+<!-- SECCIÓN 3 -->
 <section id="importancia" class="seccion">
-    <h2>Importancia</h2>
+    <h2>Importancia de la Ingeniería Automotriz</h2>
+
     <p>
-        La ingeniería automotriz es fundamental para el desarrollo de vehículos más seguros,
-        eficientes y amigables con el medio ambiente.
+        La ingeniería automotriz es esencial para el progreso tecnológico y el
+        desarrollo sostenible. Gracias a esta profesión se han logrado avances en
+        seguridad vial, eficiencia energética y reducción de emisiones contaminantes.
     </p>
+
+    <p>
+        En la actualidad, la transición hacia vehículos eléctricos y autónomos
+        demuestra la relevancia de esta carrera en la construcción del futuro del
+        transporte. Los ingenieros automotrices contribuyen directamente a mejorar
+        la calidad de vida de las personas mediante innovaciones en movilidad.
+    </p>
+
+    <p>
+        Por esta razón, esta ingeniería no solo tiene impacto económico, sino también
+        social y ambiental.
+    </p>
+
     <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7" alt="Carro eléctrico">
 </section>
 
