@@ -7,74 +7,88 @@
 
 <style>
 
+/* ===== SELECTOR POR ETIQUETA ===== */
 body{
     margin:0;
     font-family: Arial, sans-serif;
     background-color:#e6f2ff;
 }
 
-/* HEADER */
+h2{
+    color:#1f5fa6;
+}
+
+p{
+    color:#333;
+}
+
+/* ===== MENÚ ===== */
+nav{
+    background:#163d6b;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ===== HEADER ===== */
 header{
-    background-color:#1f5fa6;
+    background:#1f5fa6;
     color:white;
     text-align:center;
     padding:40px;
 }
 
-h1{
-    margin:0;
-}
-
-/* TARJETAS */
-.tarjeta{
+/* ===== SECCIONES ===== */
+.seccion{
     background:white;
+    width:85%;
     margin:30px auto;
-    padding:25px;
-    width:80%;
+    padding:30px;
     border-radius:12px;
     box-shadow:0px 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
 }
 
-.tarjeta:hover{
-    transform: scale(1.03);
-}
-
-/* SELECTORES */
+/* ===== SELECTOR POR CLASS ===== */
 .grande{
     font-size:22px;
 }
 
-.resaltado{
+.destacado{
     color:red;
+    font-size:18px;
 }
 
-#especial{
+/* ===== SELECTOR POR ID ===== */
+#fuenteEspecial{
     font-family:'Courier New', monospace;
     color:green;
 }
 
-/* BOTÓN */
-.boton{
-    display:inline-block;
-    margin-top:20px;
-    padding:10px 20px;
-    background-color:#1f5fa6;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    transition: background 0.3s;
+/* ===== IMÁGENES ===== */
+img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
 }
 
-.boton:hover{
-    background-color:#163d6b;
-}
-
+/* ===== FOOTER ===== */
 footer{
-    text-align:center;
-    padding:20px;
     background:#1f5fa6;
     color:white;
+    text-align:center;
+    padding:20px;
     margin-top:40px;
 }
 
@@ -88,35 +102,47 @@ footer{
     <p>Mi primer sitio web - Proyecto HTML</p>
 </header>
 
-<div class="tarjeta">
+<nav>
+    <a href="#quees">¿Qué es?</a>
+    <a href="#areas">Áreas</a>
+    <a href="#importancia">Importancia</a>
+</nav>
+
+<section id="quees" class="seccion">
+    <h2>¿Qué es la Ingeniería Automotriz?</h2>
     <p class="grande">
         La ingeniería automotriz se encarga del diseño, desarrollo y fabricación de vehículos modernos.
     </p>
 
-    <p class="resaltado">
+    <p class="destacado">
         Esta carrera combina mecánica, tecnología y sistemas electrónicos avanzados.
     </p>
 
-    <p id="especial">
+    <p id="fuenteEspecial">
         Los ingenieros automotrices trabajan en la innovación de motores más eficientes y sostenibles.
     </p>
 
-    <a href="#" class="boton">Más información</a>
-</div>
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Auto moderno">
+</section>
 
-<div class="tarjeta">
+<section id="areas" class="seccion">
     <h2>Áreas de trabajo</h2>
     <p>Motores, electrónica automotriz, diseño de chasis y energías alternativas.</p>
-</div>
+    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor">
+</section>
+
+<section id="importancia" class="seccion">
+    <h2>Importancia</h2>
+    <p>
+        La ingeniería automotriz es fundamental para el desarrollo de vehículos más seguros,
+        eficientes y amigables con el medio ambiente.
+    </p>
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7" alt="Carro eléctrico">
+</section>
 
 <footer>
-    © 2026 - Proyecto escolar Ingeniería Automotriz
+    © 2026 - Proyecto Escolar Ingeniería Automotriz
 </footer>
 
 </body>
 </html>
-
-
-
-
-
