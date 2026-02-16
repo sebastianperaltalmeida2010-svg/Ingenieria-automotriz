@@ -7,13 +7,13 @@
 
 <style>
 
-/* 🔹 Selector por etiqueta */
 body{
     margin:0;
     font-family: Arial, sans-serif;
     background-color:#e6f2ff;
 }
 
+/* HEADER */
 header{
     background-color:#1f5fa6;
     color:white;
@@ -25,11 +25,22 @@ h1{
     margin:0;
 }
 
-p{
-    color:#333;
+/* TARJETAS */
+.tarjeta{
+    background:white;
+    margin:30px auto;
+    padding:25px;
+    width:80%;
+    border-radius:12px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
 }
 
-/* 🔹 Selector por class */
+.tarjeta:hover{
+    transform: scale(1.03);
+}
+
+/* SELECTORES */
 .grande{
     font-size:22px;
 }
@@ -38,19 +49,33 @@ p{
     color:red;
 }
 
-.tarjeta{
-    background:white;
-    margin:30px auto;
-    padding:25px;
-    width:80%;
-    border-radius:10px;
-    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
-}
-
-/* 🔹 Selector por id */
 #especial{
     font-family:'Courier New', monospace;
     color:green;
+}
+
+/* BOTÓN */
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background-color:#1f5fa6;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition: background 0.3s;
+}
+
+.boton:hover{
+    background-color:#163d6b;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f5fa6;
+    color:white;
+    margin-top:40px;
 }
 
 </style>
@@ -75,10 +100,23 @@ p{
     <p id="especial">
         Los ingenieros automotrices trabajan en la innovación de motores más eficientes y sostenibles.
     </p>
+
+    <a href="#" class="boton">Más información</a>
 </div>
+
+<div class="tarjeta">
+    <h2>Áreas de trabajo</h2>
+    <p>Motores, electrónica automotriz, diseño de chasis y energías alternativas.</p>
+</div>
+
+<footer>
+    © 2026 - Proyecto escolar Ingeniería Automotriz
+</footer>
 
 </body>
 </html>
+
+
 
 
 
