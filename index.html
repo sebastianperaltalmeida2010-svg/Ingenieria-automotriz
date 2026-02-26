@@ -7,50 +7,16 @@
 
 <style>
 
-/* ===== SELECTORES POR ETIQUETA ===== */
+/* ===== SELECTORES AGRUPADOS ===== */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
 body{
     margin:0;
-    font-family: Arial, sans-serif;
     background-color:#e6f2ff;
     scroll-behavior:smooth;
-}
-
-h1{
-    margin:0;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.4);
-}
-
-h2{
-    color:#1f5fa6;
-    text-decoration:underline;
-}
-
-p{
-    color:#333;
-    line-height:1.8;
-    text-align:justify;
-    word-spacing:2px;
-}
-
-/* ===== MENÚ ===== */
-nav{
-    background:#163d6b;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#ffd700;
 }
 
 /* ===== HEADER ===== */
@@ -59,6 +25,39 @@ header{
     color:white;
     text-align:center;
     padding:40px;
+}
+
+/* ===== MENÚ CON PROPIEDADES PEDIDAS ===== */
+nav{
+    background:#163d6b;
+    width:100%;
+    height:60px;
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    float:left; /* PROPIEDAD PEDIDA */
+    width:33.3%;
+    text-align:center;
+    line-height:60px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    display:block;
+}
+
+/* ===== PSEUDO-CLASE HOVER ===== */
+nav ul li a:hover{
+    background:#ffd700;
+    color:black;
 }
 
 /* ===== SECCIONES ===== */
@@ -71,20 +70,35 @@ header{
     box-shadow:0px 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ===== SELECTOR POR CLASS ===== */
+/* ===== AGRUPACIÓN ID Y CLASS ===== */
+#fuenteEspecial, .destacado{
+    font-weight:bold;
+}
+
+/* ===== CLASES ===== */
 .grande{
     font-size:22px;
 }
 
 .destacado{
     color:red;
-    font-weight:bold;
 }
 
-/* ===== SELECTOR POR ID ===== */
 #fuenteEspecial{
     font-family:'Courier New', monospace;
     color:green;
+}
+
+/* ===== SELECTORES DESCENDENTES ===== */
+.seccion p{
+    line-height:1.8;
+    text-align:justify;
+    color:#333;
+}
+
+.seccion ul li{
+    margin:8px 0;
+    color:#1f5fa6;
 }
 
 /* ===== TABLA ===== */
@@ -126,6 +140,7 @@ footer{
     text-align:center;
     padding:20px;
     margin-top:40px;
+    clear:both;
 }
 
 </style>
@@ -135,14 +150,16 @@ footer{
 
 <header>
     <h1>Ingeniería Automotriz</h1>
-    <p>Proyecto HTML - Semana 3</p>
+    <p>Proyecto HTML - Semana 4</p>
 </header>
 
-<!-- MENÚ CON VÍNCULOS INTERNOS -->
+<!-- MENÚ CON <nav> -->
 <nav>
-    <a href="#quees">¿Qué es?</a>
-    <a href="#areas">Áreas</a>
-    <a href="#tabla">Materias</a>
+    <ul>
+        <li><a href="#quees">¿Qué es?</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#tabla">Materias</a></li>
+    </ul>
 </nav>
 
 <!-- SECCIÓN 1 -->
@@ -154,8 +171,7 @@ footer{
     </p>
 
     <p>
-        Esta carrera combina conocimientos de mecánica, electrónica y tecnología avanzada
-        para crear sistemas de transporte más eficientes y sostenibles.
+        Esta carrera combina conocimientos de mecánica, electrónica y tecnología avanzada para crear sistemas de transporte más eficientes y sostenibles.
     </p>
 
     <p class="destacado">
@@ -163,14 +179,13 @@ footer{
     </p>
 
     <p id="fuenteEspecial">
-        Actualmente, su enfoque principal está en la movilidad eléctrica y los vehículos inteligentes.
+        Actualmente su enfoque principal está en la movilidad eléctrica y los vehículos inteligentes.
     </p>
 
     <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Auto moderno">
 
-    <!-- VÍNCULO EXTERNO -->
     <p>
-        Puedes aprender más sobre esta carrera en:
+        Más información en:
         <a href="https://es.wikipedia.org/wiki/Ingeniería_automotriz" target="_blank">
         Wikipedia - Ingeniería Automotriz</a>
     </p>
@@ -181,31 +196,27 @@ footer{
     <h2>Áreas de trabajo</h2>
 
     <p>
-        Los ingenieros automotrices pueden trabajar en diseño de motores,
-        electrónica vehicular, sistemas de seguridad y energías alternativas.
+        Los ingenieros automotrices pueden trabajar en diferentes campos relacionados con el diseño y la innovación tecnológica.
     </p>
 
-    <p>
-        También participan en la creación de vehículos eléctricos,
-        baterías de alto rendimiento y software de control inteligente.
-    </p>
+    <!-- LISTA CON SELECTORES DESCENDENTES -->
+    <ul>
+        <li>Diseño de motores y sistemas mecánicos</li>
+        <li>Electrónica vehicular y sensores inteligentes</li>
+        <li>Vehículos eléctricos e híbridos</li>
+        <li>Sistemas de seguridad automotriz</li>
+    </ul>
 
     <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor">
 
-    <!-- VÍNCULO INTERNO -->
     <p>
-        Ir a la sección de materias: <a href="#tabla">Ver tabla de materias</a>
+        Ir a la sección de materias: <a href="#tabla">Ver tabla</a>
     </p>
 </section>
 
-<!-- SECCIÓN 3 CON TABLA -->
+<!-- SECCIÓN 3 -->
 <section id="tabla" class="seccion">
-    <h2>Materias importantes en la carrera</h2>
-
-    <p>
-        A continuación, se muestra una tabla con algunas materias fundamentales
-        en la formación de un ingeniero automotriz:
-    </p>
+    <h2>Materias importantes</h2>
 
     <table>
         <tr>
@@ -213,29 +224,20 @@ footer{
             <th>Descripción</th>
             <th>Importancia</th>
         </tr>
-
         <tr>
             <td>Mecánica Automotriz</td>
-            <td>Estudio del funcionamiento de motores y sistemas mecánicos.</td>
-            <td>Base principal de la carrera.</td>
+            <td>Funcionamiento de motores y sistemas.</td>
+            <td>Base de la carrera.</td>
         </tr>
-
         <tr>
             <td>Electrónica Vehicular</td>
-            <td>Sistemas eléctricos y sensores del automóvil.</td>
-            <td>Fundamental para autos modernos.</td>
+            <td>Sensores y sistemas eléctricos.</td>
+            <td>Autos modernos.</td>
         </tr>
-
         <tr>
             <td>Energías Alternativas</td>
-            <td>Uso de energía eléctrica e híbrida.</td>
-            <td>Clave para la sostenibilidad.</td>
-        </tr>
-
-        <tr>
-            <td>Diseño de Chasis</td>
-            <td>Estructura y seguridad del vehículo.</td>
-            <td>Garantiza protección y estabilidad.</td>
+            <td>Uso de energía eléctrica.</td>
+            <td>Sostenibilidad.</td>
         </tr>
     </table>
 </section>
