@@ -3,247 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Ingeniería Automotriz</title>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-/* ===== SELECTORES AGRUPADOS ===== */
-h1, h2 {
-    font-family: Arial, sans-serif;
-}
-
-/* ===== BODY ===== */
+/* fondo */
 body{
-    margin:0;
-    background-color:#e6f2ff;
-    scroll-behavior:smooth;
+background:#eaf2ff;
+scroll-behavior:smooth;
 }
 
-/* ===== HEADER ===== */
+/* encabezado */
 header{
-    background:#1f5fa6;
-    color:white;
-    text-align:center;
-    padding:40px;
+text-align:center;
+padding:40px;
+background:#1f5fa6;
+color:white;
 }
 
-/* ===== MENÚ CON PROPIEDADES PEDIDAS ===== */
-nav{
-    background:#163d6b;
-    width:100%;
-    height:60px;
-}
-
-nav ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-nav ul li{
-    float:left; /* PROPIEDAD PEDIDA */
-    width:33.3%;
-    text-align:center;
-    line-height:60px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    display:block;
-}
-
-/* ===== PSEUDO-CLASE HOVER ===== */
+/* menu */
 nav ul li a:hover{
-    background:#ffd700;
-    color:black;
+background:#ffd700;
+color:black;
 }
 
-/* ===== SECCIONES ===== */
+/* secciones */
 .seccion{
-    background:white;
-    width:85%;
-    margin:40px auto;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+background:white;
+padding:40px;
+margin-top:40px;
+border-radius:10px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ===== AGRUPACIÓN ID Y CLASS ===== */
-#fuenteEspecial, .destacado{
-    font-weight:bold;
-}
-
-/* ===== CLASES ===== */
+/* clases */
 .grande{
-    font-size:22px;
+font-size:22px;
 }
 
 .destacado{
-    color:red;
+color:red;
+font-weight:bold;
 }
 
+/* id */
 #fuenteEspecial{
-    font-family:'Courier New', monospace;
-    color:green;
+font-family:Courier;
+color:green;
 }
 
-/* ===== SELECTORES DESCENDENTES ===== */
+/* selectores descendentes */
 .seccion p{
-    line-height:1.8;
-    text-align:justify;
-    color:#333;
+line-height:1.8;
+text-align:justify;
 }
 
 .seccion ul li{
-    margin:8px 0;
-    color:#1f5fa6;
+margin:8px;
+color:#1f5fa6;
 }
 
-/* ===== TABLA ===== */
+/* tabla */
 table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
+margin-top:20px;
 }
 
-th{
-    background:#1f5fa6;
-    color:white;
-    padding:10px;
-}
-
-td{
-    border:1px solid #ccc;
-    padding:10px;
-    text-align:center;
-}
-
-tr:nth-child(even){
-    background:#f2f2f2;
-}
-
-/* ===== IMÁGENES ===== */
 img{
-    width:100%;
-    max-width:600px;
-    display:block;
-    margin:25px auto;
-    border-radius:10px;
+width:100%;
+max-width:600px;
+display:block;
+margin:auto;
+border-radius:10px;
+margin-top:20px;
 }
 
-/* ===== FOOTER ===== */
 footer{
-    background:#1f5fa6;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-    clear:both;
+background:#1f5fa6;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Ingeniería Automotriz</h1>
-    <p>Proyecto HTML - Semana 4</p>
+<h1>Ingeniería Automotriz</h1>
+<p>Proyecto HTML y CSS con Bootstrap</p>
 </header>
 
-<!-- MENÚ CON <nav> -->
-<nav>
-    <ul>
-        <li><a href="#quees">¿Qué es?</a></li>
-        <li><a href="#areas">Áreas</a></li>
-        <li><a href="#tabla">Materias</a></li>
-    </ul>
+<!-- NAVBAR BOOTSTRAP -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">Automotriz</a>
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link" href="#quees">¿Qué es?</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#areas">Áreas</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#tabla">Materias</a>
+</li>
+
+</ul>
+
+</div>
 </nav>
 
-<!-- SECCIÓN 1 -->
-<section id="quees" class="seccion">
-    <h2>¿Qué es la Ingeniería Automotriz?</h2>
 
-    <p class="grande">
-        La ingeniería automotriz se encarga del diseño, desarrollo y fabricación de vehículos modernos.
-    </p>
+<!-- SECCION 1 -->
+<section id="quees" class="seccion container">
 
-    <p>
-        Esta carrera combina conocimientos de mecánica, electrónica y tecnología avanzada para crear sistemas de transporte más eficientes y sostenibles.
-    </p>
+<h2>¿Qué es la Ingeniería Automotriz?</h2>
 
-    <p class="destacado">
-        Es una de las ingenierías con mayor impacto tecnológico en el mundo actual.
-    </p>
+<p class="grande">
+La ingeniería automotriz es una rama de la ingeniería que se encarga del diseño, desarrollo, fabricación y mantenimiento de vehículos. Esta disciplina combina conocimientos de mecánica, electrónica, informática y tecnología avanzada para crear automóviles cada vez más eficientes, seguros y sostenibles.
+</p>
 
-    <p id="fuenteEspecial">
-        Actualmente su enfoque principal está en la movilidad eléctrica y los vehículos inteligentes.
-    </p>
+<p>
+Los ingenieros automotrices trabajan en la creación de motores, sistemas de seguridad, sistemas electrónicos y nuevas tecnologías que mejoran el rendimiento de los vehículos. Además, en la actualidad esta área ha tomado gran importancia debido al desarrollo de autos eléctricos y sistemas de conducción inteligente.
+</p>
 
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Auto moderno">
+<p class="destacado">
+Gracias a los avances tecnológicos, la industria automotriz está evolucionando hacia vehículos más ecológicos, eficientes y automatizados.
+</p>
 
-    <p>
-        Más información en:
-        <a href="https://es.wikipedia.org/wiki/Ingeniería_automotriz" target="_blank">
-        Wikipedia - Ingeniería Automotriz</a>
-    </p>
+<p id="fuenteEspecial">
+Hoy en día muchas empresas automotrices investigan nuevas tecnologías como la inteligencia artificial aplicada a la conducción, los sistemas de asistencia al conductor y las energías alternativas.
+</p>
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+
+<p>
+Más información en:
+<a href="https://es.wikipedia.org/wiki/Ingeniería_automotriz" target="_blank">
+Wikipedia Ingeniería Automotriz
+</a>
+</p>
+
 </section>
 
-<!-- SECCIÓN 2 -->
-<section id="areas" class="seccion">
-    <h2>Áreas de trabajo</h2>
 
-    <p>
-        Los ingenieros automotrices pueden trabajar en diferentes campos relacionados con el diseño y la innovación tecnológica.
-    </p>
+<!-- SECCION 2 -->
+<section id="areas" class="seccion container">
 
-    <!-- LISTA CON SELECTORES DESCENDENTES -->
-    <ul>
-        <li>Diseño de motores y sistemas mecánicos</li>
-        <li>Electrónica vehicular y sensores inteligentes</li>
-        <li>Vehículos eléctricos e híbridos</li>
-        <li>Sistemas de seguridad automotriz</li>
-    </ul>
+<h2>Áreas de trabajo</h2>
 
-    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Motor">
+<p>
+Los ingenieros automotrices pueden desempeñarse en diferentes áreas dentro de la industria automotriz. Estas áreas se enfocan en mejorar distintos aspectos del funcionamiento y diseño de los vehículos modernos.
+</p>
 
-    <p>
-        Ir a la sección de materias: <a href="#tabla">Ver tabla</a>
-    </p>
+<ul>
+<li>Diseño y desarrollo de motores</li>
+<li>Sistemas electrónicos y sensores</li>
+<li>Vehículos eléctricos e híbridos</li>
+<li>Sistemas de seguridad automotriz</li>
+<li>Investigación y desarrollo tecnológico</li>
+</ul>
+
+<p>
+El trabajo de estos profesionales es fundamental para mejorar la movilidad y crear sistemas de transporte más eficientes y sostenibles.
+</p>
+
+<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc">
+
+<p>
+Ir a la tabla de materias:
+<a href="#tabla">Ver tabla</a>
+</p>
+
 </section>
 
-<!-- SECCIÓN 3 -->
-<section id="tabla" class="seccion">
-    <h2>Materias importantes</h2>
 
-    <table>
-        <tr>
-            <th>Materia</th>
-            <th>Descripción</th>
-            <th>Importancia</th>
-        </tr>
-        <tr>
-            <td>Mecánica Automotriz</td>
-            <td>Funcionamiento de motores y sistemas.</td>
-            <td>Base de la carrera.</td>
-        </tr>
-        <tr>
-            <td>Electrónica Vehicular</td>
-            <td>Sensores y sistemas eléctricos.</td>
-            <td>Autos modernos.</td>
-        </tr>
-        <tr>
-            <td>Energías Alternativas</td>
-            <td>Uso de energía eléctrica.</td>
-            <td>Sostenibilidad.</td>
-        </tr>
-    </table>
+<!-- SECCION 3 -->
+<section id="tabla" class="seccion container">
+
+<h2>Materias importantes</h2>
+
+<table class="table table-striped table-bordered">
+
+<tr>
+<th>Materia</th>
+<th>Descripción</th>
+<th>Importancia</th>
+</tr>
+
+<tr>
+<td>Mecánica Automotriz</td>
+<td>Estudia el funcionamiento de motores y sistemas mecánicos.</td>
+<td>Base fundamental de la carrera.</td>
+</tr>
+
+<tr>
+<td>Electrónica Vehicular</td>
+<td>Analiza los sistemas eléctricos y sensores del vehículo.</td>
+<td>Esencial para autos modernos.</td>
+</tr>
+
+<tr>
+<td>Energías Alternativas</td>
+<td>Estudia nuevas fuentes de energía como electricidad o hidrógeno.</td>
+<td>Importante para el futuro sostenible.</td>
+</tr>
+
+</table>
+
 </section>
+
 
 <footer>
-    © 2026 - Proyecto Escolar Ingeniería Automotriz
+
+<p>Proyecto escolar HTML y CSS</p>
+
+<p>
+Esta página utiliza el framework Bootstrap mediante el uso de componentes como navbar, tablas y clases de diseño para mejorar la apariencia del sitio web.
+</p>
+
 </footer>
 
 </body>
